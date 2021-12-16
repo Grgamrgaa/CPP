@@ -3,12 +3,12 @@
 
 int main()
 {
-    int a;
-    int b;
-    scanf("%d", &a);
-    scanf("%d", &b);
-    printf("površina trokuta je = %d\n",((a*b)/2));
-    return 0;
+ printf(" 4 > 6 -> %d.\n", (4>6));
+ printf(" 4 < 6 -> %d.\n", (4<6));
+ printf(" 4 >= 6 -> %d.\n", (4>=6));
+  printf(" 4 <= 6 -> %d.\n", (4<=6));
+   printf(" 4 !=6 -> %d.\n", (4!=6));
+    printf(" 4 == 6 -> %d.\n", (4==6));
+ return 0;
+
 }
-
-
