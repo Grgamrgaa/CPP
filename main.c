@@ -3,10 +3,17 @@
 
 int main()
 {
-int a=4, b=3;
- a=b++;
- b=--a;
-printf("%d %d",a,b);
- return 0;
+    int F;
+    float K;
+    float C;
+    printf("Upisi Fn stupnjeve");
+    scanf("%d",&F);
 
+     C=(F-32)*9/5;
+    C=K+273.15;
+
+    printf("Temperatura u Celzijevim stupnjevima je %.2f\n", C);
+    printf("Temperatura u Kelvinima stupnjevima je %.2f\n", K);
+
+    return 0;
 }
