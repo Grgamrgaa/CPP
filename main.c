@@ -3,17 +3,26 @@
 
 int main()
 {
-    int F;
-    float K;
-    float C;
-    printf("Upisi Fn stupnjeve");
-    scanf("%d",&F);
+  int c,s,m;
 
-     C=(F-32)*9/5;
-    C=K+273.15;
+  printf("Unesi cijenu proizvoda");
+  scanf("%d",&c);
+  printf("Unesi sate");
+  scanf("%d",&s);
+  printf("Unesi minute");
+  scanf("%d",&m);
 
-    printf("Temperatura u Celzijevim stupnjevima je %.2f\n", C);
-    printf("Temperatura u Kelvinima stupnjevima je %.2f\n", K);
+
+
+
+  printf("konacna cijena: %d",c-s-m);
+
+
+
+
+
+
+
 
     return 0;
 }
