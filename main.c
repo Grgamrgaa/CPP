@@ -1,28 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 int main()
+
 {
-  int c,s,m;
+  int brojStupova,duljinaStupova,debljinaStupova;
 
-  printf("Unesi cijenu proizvoda");
-  scanf("%d",&c);
-  printf("Unesi sate");
-  scanf("%d",&s);
-  printf("Unesi minute");
-  scanf("%d",&m);
-
-
-
-
-  printf("konacna cijena: %d",c-s-m);
-
-
-
-
-
-
-
-
-    return 0;
+  printf("broj,udaljenost među stupovima i debljina stupova\n");
+  scanf("%d %d %d",&brojStupova,&duljinaStupova,&debljinaStupova);
+  duljinaStupova*=100;
+  int ukUdaljenost=(brojStupova-1)*duljinaStupova+(brojStupova-2)*debljinaStupova;
+  printf("udaljenost je %d",ukUdaljenost);
 }
