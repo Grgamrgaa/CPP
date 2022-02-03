@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int h, min;
+	long int sek;
+
+    printf("\nUpiši broj sati i minuta: ");
+	scanf("%d %d", &h, &min);
+
+	sek = (h*60+min)*60;
+
+	printf("\n%d sati i %d minuta iznosi %ld sekundi", h, min, sek);
+
+    return 0;
+}
