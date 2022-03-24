@@ -1,27 +1,37 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-    int a,b;
-    printf("Upiši prvi broj");
-    scanf("%d",&a);
-     printf("Upiši drugi broj");
-    scanf("%d",&b);
-    if(a>b)
-    {
-        printf("broj %d je veći od broja %d",a,b);
+
+    int n, i, fac=1, br=0;
+
+    do{
+    printf("Unesi broj\n");
+    scanf("%d", &n);
+    if(n<0){printf("Error\n");
+    if(br>5) printf("Unesi pozitivan %d\n",br);
     }
-    else
-    {
-        printf("broj %d je veći od broja %d",b,a);
+    br++;
 
-    }
-
-
-
-
+    }while (n<0);
+    i=n;
+    while(i)
+        fac*=i--;
+    printf("faktoriel broja %d je %d",n, fac);
 
 
-return 0;
 
+
+
+
+
+
+
+
+
+
+
+
+    return 0;
 }
