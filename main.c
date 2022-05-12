@@ -1,27 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
-int main(){
+int main()
+{
+    int i;
+    int x[6];
 
-int n,i=0,x=2,y=1,sum=0;
-printf("Unesi koliko ima gradova\n");
-scanf("%d",&n);
-n=n-1;
-while(n>0){
-	n--;
-	printf("Unesi razmak izmedu %d i %d grada \n",y++,x++);
-	scanf("%d",&i);
-	sum+=i;
+    for(i=0;i<6;i++){
+    printf("unesi broj:");
+    scanf("%d",&x[i]);
+
+    }
+
+    for(i=0;i<6;i++){
+            printf("%d\n",x[i]);
+    }
+
+
+
+
+
+
+    return 0;
 }
-printf("%d",sum);
-return 0;
-}
-
-
-
-
-
-
-
-
