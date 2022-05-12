@@ -4,16 +4,10 @@
 int main()
 {
     int i;
-    int x[6];
+    int a[5]={16,-3,4,2,10};
+    for(i=4;i>=0;i--){
 
-    for(i=0;i<6;i++){
-    printf("unesi broj:");
-    scanf("%d",&x[i]);
-
-    }
-
-    for(i=0;i<6;i++){
-            printf("%d\n",x[i]);
+            printf("%d\n",a[i]);
     }
 
 
