@@ -3,12 +3,36 @@
 
 int main()
 {
-    int i;
-    int a[5]={16,-3,4,2,10};
-    for(i=4;i>=0;i--){
 
-            printf("%d\n",a[i]);
+   int M;
+   int N;
+   int K;
+   int O;
+   int a;
+
+   printf("Koliko prijatelja zeli upisati tecaj: ");
+    scanf("%d", &N);
+    printf("\nKoliki je maksimalan kapacitet: ");
+    scanf("%d", &M);
+    printf("\nKoliko prijatelja se upisalo na tecaj: \n");
+    scanf("%d", &K);
+
+   if(N<=M){
+        printf("Prijatelji se mogu upisati.");
+        a=M-N-K;
+         printf("Ostalo je %d slobodnoh mjesta.", a);
+    } else {
+        printf("Ne mogu se svi prijatelji upisati.");
+        O=N-M;
+        printf("Ostalo ih je: %d", O);
     }
+
+
+
+
+
+
+
 
 
 
